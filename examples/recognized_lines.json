@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "exam_id": "exam_demo",
+  "run_id": "demo_ocr_v1",
+  "stage": "ocr",
+  "pages": [
+    {
+      "schema_version": 1,
+      "exam_id": "exam_demo",
+      "page_id": "p01",
+      "page_index": 1,
+      "original_image_path": "originals/p01.png",
+      "processed_image_path": "pages/p01.png",
+      "original_size": {
+        "width": 800,
+        "height": 1200
+      },
+      "processed_size": {
+        "width": 800,
+        "height": 1200
+      },
+      "original_to_processed": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "preprocessing_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "original_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "schema_version": 1,
+      "exam_id": "exam_demo",
+      "page_id": "p02",
+      "page_index": 2,
+      "original_image_path": "originals/p02.png",
+      "processed_image_path": "pages/p02.png",
+      "original_size": {
+        "width": 800,
+        "height": 1200
+      },
+      "processed_size": {
+        "width": 800,
+        "height": 1200
+      },
+      "original_to_processed": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "preprocessing_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "original_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "schema_version": 1,
+      "exam_id": "exam_demo",
+      "page_id": "p03",
+      "page_index": 3,
+      "original_image_path": "originals/p03.png",
+      "processed_image_path": "pages/p03.png",
+      "original_size": {
+        "width": 800,
+        "height": 1200
+      },
+      "processed_size": {
+        "width": 800,
+        "height": 1200
+      },
+      "original_to_processed": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "preprocessing_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "original_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "blank",
+      "issues": []
+    }
+  ],
+  "lines": [
+    {
+      "schema_version": 1,
+      "exam_id": "exam_demo",
+      "page_id": "p01",
+      "line_id": "line_0001",
+      "bbox": [
+        40,
+        60,
+        700,
+        110
+      ],
+      "reading_order": 1,
+      "image_path": "crops/p01/line_0001.png",
+      "source_detection_id": "detection_0001",
+      "text": "Câu 1: Học máy là gì?",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "schema_version": 1,
+      "exam_id": "exam_demo",
+      "page_id": "p01",
+      "line_id": "line_0002",
+      "bbox": [
+        40,
+        140,
+        720,
+        200
+      ],
+      "reading_order": 2,
+      "image_path": "crops/p01/line_0002.png",
+      "source_detection_id": "detection_0002",
+      "text": "Trả lời: Học máy là một lĩnh vực của trí tuệ nhân tạo.",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "schema_version": 1,
+      "exam_id": "exam_demo",
+      "page_id": "p02",
+      "line_id": "line_0001",
+      "bbox": [
+        40,
+        60,
+        680,
+        120
+      ],
+      "reading_order": 1,
+      "image_path": "crops/p02/line_0001.png",
+      "source_detection_id": "detection_0001",
+      "text": "",
+      "status": "failed",
+      "issues": [
+        {
+          "code": "OCRInferenceFailed",
+          "stage": "ocr",
+          "severity": "error",
+          "message": "Simulated OCR failure illustrating the contract; rerun OCR or review manually.",
+          "refs": [
+            {
+              "exam_id": "exam_demo",
+              "page_id": "p02",
+              "line_id": "line_0001"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "synthetic": true,
+    "image_assets_available": false,
+    "note": "Đường dẫn và hash chỉ minh họa; không có ảnh đi kèm.",
+    "recognizer": "manual_fixture",
+    "checkpoint": null
+  }
+}

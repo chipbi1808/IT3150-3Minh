@@ -1,0 +1,2 @@
+# Runtime dependencies for Python 3.10+.
+jsonschema==4.26.0
